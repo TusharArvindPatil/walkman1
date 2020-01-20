@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WALK MEN</title>
+        <style>
+          div.user {
+            margin:0px auto;
+              width:105px;
+              height: 132px;
+              background-image: url("./2.jpg");
+              animation-name:walkmen;
+              animation-duration: 1s;
+              animation-timing-function: steps(16);
+              animation-iteration-count: infinite;
+              animation-delay: 0s;
+          }
+
+          @keyframes walkmen {
+              from {background-position: 0px;}
+              to {background-position: -2040px;
+              
+               
+              }
+          }
+          body {
+           animation-name:bg;
+           animation-duration: 2s;
+           animation-timing-function: ease-in-out;
+           animation-iteration-count: infinite;
+           animation-delay: 0s;
+          }
+  @keyframes bg {
+      from {
+          background:url("./assets/img/1d8f81db2475d448a36e4d3c1f183486.gif") ;
+          background-size: cover;
+      }
+      to {
+        background:url("./assets/img/giphy.gif");
+        background-size: cover;
+      }
+  }
+
+        </style>
+    </head>
+    <body>
+        <div class="user">
+        </div>
+        <button type="button" onclick="audio()"
+         id="btn"
+        >CLICK MEN</button>
+        <script>
+            var p = document.getElementById("btn");
+           function audio() {
+               let audio = new Audio();
+                  audio.src = "./assets/img/Panipat.mp3";
+                  audio.play();
+           }
+          
+        </script>
+    </body>
+</html>
